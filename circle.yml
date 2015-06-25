@@ -26,3 +26,4 @@ test:
     - cp -r /home/ubuntu/Adams.Heimdall.droid/library/build/outputs $CIRCLE_ARTIFACTS
     # copy the test results to the test results directory.
     - cp -r /home/ubuntu/Adams.Heimdall.droid/library/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
+
