@@ -1,0 +1,28 @@
+
+machine:
+  environment:
+    ADB_INSTALL_TIMEOUT: 16
+
+general:
+    artifacts:
+        - /home/ubuntu/Adams.Heimdall.droid/library/build/outputs/reports/androidTests/connected
+
+dependencies:
+    cache_directories:
+        - ~/.android
+        - ~/android
+
+test:
+  override:
+    # start the emulator
+    - emulator -avd circleci-android22 -no-audio -no-window:
+        background: true
+        parallel: true
+    # wait for it to have booted
+    - circle-android wait-for-boot
+    # run tests  against the emulator.
+    - ./gradlew clean connectedAndroidTest --info
+    # copy the build outputs to artifacts
+    - cp -r /home/ubuntu/Adams.Heimdall.droid/library/build/outputs $CIRCLE_ARTIFACTS
+    # copy the test results to the test results directory.
+    - cp -r /home/ubuntu/Adams.Heimdall.droid/library/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
