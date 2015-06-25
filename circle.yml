@@ -4,7 +4,7 @@ machine:
     version: oraclejdk8
 
   environment:
-    ADB_INSTALL_TIMEOUT: 16
+    ADB_INSTALL_TIMEOUT: 20
 
 dependencies:
     override:
