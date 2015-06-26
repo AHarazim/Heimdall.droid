@@ -21,11 +21,6 @@ general:
     artifacts:
         - /home/ubuntu/Adams.Heimdall.droid/library/build/outputs/reports/androidTests/connected
 
-dependencies:
-    cache_directories:
-        - ~/.android
-        - ~/android
-
 test:
   override:
     # start the emulator
