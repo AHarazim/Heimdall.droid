@@ -23,6 +23,7 @@ android {
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
 
+    com.android.ddmlib.DdmPreferences.setTimeOut(30000)
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
