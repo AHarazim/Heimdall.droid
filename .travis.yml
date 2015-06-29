@@ -7,6 +7,9 @@ env:
 android:
   components:
     - build-tools-22.1.1
+    - android-22
+    - add-on
+    - extra
 
 # Emulator Management: Create, Start and Wait
 before_script:
