@@ -2,13 +2,14 @@
 
 Heimdall is an [OAuth 2.0](https://tools.ietf.org/html/rfc6749) client specifically designed for easy usage and high flexibility. It supports all grants as described in [Section 4](https://tools.ietf.org/html/rfc6749#section-4) as well as refreshing an access token as described in [Section 6](https://tools.ietf.org/html/rfc6749#section-6) of the [The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749) specification.
 
-This library makes use of [RxAndroid](https://github.com/ReactiveX/RxAndroid). Therefore you should be familar with [Observables](https://github.com/ReactiveX/RxJava/wiki/Observable).
+This library makes use of [RxJava](https://github.com/ReactiveX/RxJava). Therefore you should be familar with [Observables](https://github.com/ReactiveX/RxJava/wiki/Observable).
 
 If you are an iOS Developer then please take a look at the [Swift version of Heimdall](https://github.com/rheinfabrik/Heimdall.swift).
 
 ## Installation
 
 [![Build Status](http://img.shields.io/github/release/rheinfabrik/Heimdall.droid.svg?label=Heimdall)](https://jitpack.io/#rheinfabrik/Heimdall.droid)
+[![Build Status](https://travis-ci.org/rheinfabrik/Heimdall.droid.svg?branch=master)](https://travis-ci.org/rheinfabrik/Heimdall.droid)
 
 [![Build Status](https://travis-ci.org/AHarazim/Heimdall.droid.svg?branch=devTravisCI)](https://travis-ci.org/AHarazim/Heimdall.droid)
 
